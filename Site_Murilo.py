@@ -17,11 +17,11 @@ col1, col2 = st.columns([1, 3])
 # Adicionando conteúdo à primeira coluna
 with col1:
     st.image("foto_perfil.png", width=275)
-    create_whatsapp_button("Enviar mensagem", key="duvidas_whatsapp")
-    if st.button("Consultório"):
-         webbrowser.open_new_tab(maps_link)
-    if st.button("Instagram"):
-         webbrowser.open_new_tab(instagram_link)
+   # create_whatsapp_button("Enviar mensagem", key="duvidas_whatsapp")
+    #if st.button("Consultório"):
+        # webbrowser.open_new_tab(maps_link)
+   # if st.button("Instagram"):
+        # webbrowser.open_new_tab(instagram_link)
 
 with col2:
     st.title('Nutricionista Murilo Sobrenome')
@@ -41,7 +41,7 @@ Através de uma abordagem humanizada e científica, auxilio meus pacientes a:"""
              
     st.write("Se você busca uma transformação duradoura e está pronto para investir na sua saúde, me chame no WhatsApp e agende sua consulta!")
 
-    create_whatsapp_button("Entrar em contato pelo WhatsApp", key="Entrar em contato")   
+   # create_whatsapp_button("Entrar em contato pelo WhatsApp", key="Entrar em contato")   
 
 with tab2:
     st.header("Consultoria Nutricional Individualizada: Desenvolva um plano alimentar personalizado para alcançar seus objetivos de forma saudável e sustentável.")
@@ -57,31 +57,30 @@ Entenda seus exames e como eles se relacionam com sua saúde e alimentação.
 Melhore seu desempenho esportivo com uma alimentação adequada e personalizada.             
 5. Palestras e Workshops:              
 Participe de eventos e aprenda mais sobre alimentação saudável e nutrição.""")
-    create_whatsapp_button("Entrar em contato pelo WhatsApp", key="fale já")
+    #create_whatsapp_button("Entrar em contato pelo WhatsApp", key="fale já")
 with tab3:
     st.header("Me ligue ou envie uma mensagem para o número:")
     st.write("Telefone: 21912345678 (WhatsApp)")
-    create_whatsapp_button("Entrar em contato pelo WhatsApp", key="fale agora")
+    #create_whatsapp_button("Entrar em contato pelo WhatsApp", key="fale agora")
 
     st.header("Se preferir envie um e-mail para:")
-    #st.write("nomesobrenome@email.com")
-    st.text(email)
-    if st.button("Enviar e-mail agora"):
-         webbrowser.open_new_tab(email)
+    st.write("nomesobrenome@email.com")
+    #st.text(email)
+    #if st.button("Enviar e-mail agora"):
+         #webbrowser.open_new_tab(email)
 
     st.header("Atendo presencialmente no endereço:")
     st.write("Rua tal, número tal/complemento tal Bairro tal. Cidade Tal. Referência tal.")
-    if st.button("Veja nossa localização"):
-         webbrowser.open_new_tab(maps_link)
+    #if st.button("Veja nossa localização"):
+         #webbrowser.open_new_tab(maps_link)
 
     st.header("Me siga no Instagram")
 
-    if st.button("Acesse nosso Instagram"):
-         webbrowser.open_new_tab(instagram_link)
+    #if st.button("Acesse nosso Instagram"):
+         #webbrowser.open_new_tab(instagram_link)
 
     
-    
-    # Adicione outros elementos aqui    
+
 
 
 
