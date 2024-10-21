@@ -17,11 +17,11 @@ col1, col2 = st.columns([1, 3])
 # Adicionando conteúdo à primeira coluna
 with col1:
     st.image("foto_perfil.png", width=275)
-   # create_whatsapp_button("Enviar mensagem", key="duvidas_whatsapp")
-    #if st.button("Consultório"):
-        # webbrowser.open_new_tab(maps_link)
-   # if st.button("Instagram"):
-        # webbrowser.open_new_tab(instagram_link)
+    create_whatsapp_button("Enviar mensagem", key="duvidas_whatsapp")
+    if st.button("Consultório"):
+         webbrowser.open_new_tab(maps_link)
+    if st.button("Instagram"):
+         webbrowser.open_new_tab(instagram_link)
 
 with col2:
     st.title('Nutricionista Murilo Sobrenome')
